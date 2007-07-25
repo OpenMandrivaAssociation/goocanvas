@@ -6,7 +6,7 @@ Name: goocanvas
 Version: 0.8
 Release: %mkrel 1
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
-Group: Developement/Other
+Group: Development/GNOME and GTK+
 License: GPL
 URL: http://sourceforge.net/projects/goocanvas
 Source: http://kent.dl.sourceforge.net/sourceforge/goocanvas/%{name}-%{version}.tar.gz
@@ -20,23 +20,27 @@ drawing. It has a model/view split, and uses interfaces for canvas items and
 views, so you can easily turn any application object into canvas items.
 
 %package -n %{libname}
-Summary: new canvas widget for GTK+ that uses the cairo 2D library
-Group: System/Libries
-Requires: %{name}-i18n = %{version}-%{release}
+Summary: New canvas widget for GTK+ that uses the cairo 2D library
+Group: System/Libraries
+Requires: %{name}-i18n = %{version}
+Provides: lib%{name} = %{version}-%{release}
 
 %description -n %{libname}
 This package contains the shared library for goocanvas.
 
+%post -n %{libname} -p /sbin/ldconfig
+%postun -n %{libname} -p /sbin/ldconfig
+
 %package i18n
-Summary: new canvas widget for GTK+ that uses the cairo 2D library
+Summary: New canvas widget for GTK+ that uses the cairo 2D library
 Group: System/Internationalization
 
 %description i18n
 This package contains the translations for goocanvas.
 
 %package -n %{develname}
-Summary: new canvas widget for GTK+ that uses the cairo 2D library
-Group: Developement/Other
+Summary: New canvas widget for GTK+ that uses the cairo 2D library
+Group: Development/GNOME and GTK+
 Requires: %{libname} = %{version}-%{release}
 Provides: lib%{name}-devel = %{version}-%{release}
 Provides: %{name}-devel = %{version}-%{release}
