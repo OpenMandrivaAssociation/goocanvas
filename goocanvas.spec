@@ -1,9 +1,9 @@
-%define major 2
+%define major 3
 %define libname %mklibname goocanvas %major
 %define develname %mklibname -d goocanvas
 
 Name: goocanvas
-Version: 0.8
+Version: 0.9
 Release: %mkrel 1
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
 Group: Development/GNOME and GTK+
