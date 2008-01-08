@@ -22,7 +22,7 @@ views, so you can easily turn any application object into canvas items.
 %package -n %{libname}
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
 Group: System/Libraries
-Requires: %{name}-i18n = %{version}
+Requires: %{name}-i18n >= %{version}
 Provides: lib%{name} = %{version}-%{release}
 
 %description -n %{libname}
