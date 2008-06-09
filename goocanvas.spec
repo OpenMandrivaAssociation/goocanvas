@@ -29,8 +29,12 @@ Provides: lib%{name} = %{version}-%{release}
 %description -n %{libname}
 This package contains the shared library for goocanvas.
 
+%if %mdkversion < 200900
 %post -n %{libname} -p /sbin/ldconfig
+%endif
+%if %mdkversion < 200900
 %postun -n %{libname} -p /sbin/ldconfig
+%endif
 
 %package i18n
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
