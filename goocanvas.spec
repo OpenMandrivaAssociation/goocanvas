@@ -3,14 +3,14 @@
 %define develname %mklibname -d goocanvas
 
 Name: goocanvas
-Version: 0.12
+Version: 0.13
 Release: %mkrel 1
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
 Group: Development/GNOME and GTK+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: LGPL+
 URL: http://sourceforge.net/projects/goocanvas
-Source: http://download.gnome.org/sources/goocanvas/%{name}-%{version}.tar.bz2
+Source: http://ftp.gnome.org/pub/GNOME/sources/goocanvas/%{name}-%{version}.tar.bz2
 BuildRequires: gtk+2-devel
 BuildRequires: gnome-doc-utils
 BuildRequires: intltool
