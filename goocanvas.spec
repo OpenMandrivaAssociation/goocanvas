@@ -4,7 +4,7 @@
 
 Name: goocanvas
 Version: 0.15
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: New canvas widget for GTK+ that uses the cairo 2D library
 Group: Development/GNOME and GTK+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
