@@ -4,7 +4,7 @@
 
 Name:		goocanvas
 Version:	1.0.0
-Release:	9
+Release:	10
 Summary:	New canvas widget for GTK+ that uses the cairo 2D library
 Group:		Development/GNOME and GTK+
 License:	LGPL+
