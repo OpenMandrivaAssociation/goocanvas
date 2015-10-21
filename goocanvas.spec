@@ -2,6 +2,8 @@
 %define libname %mklibname goocanvas %{major}
 %define devname %mklibname -d goocanvas
 
+%define _disable_lto 1
+%define _disable_rebuild_configure 1
 Name:		goocanvas
 Version:	1.0.0
 Release:	15
