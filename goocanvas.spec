@@ -6,7 +6,7 @@
 %define _disable_rebuild_configure 1
 Name:		goocanvas
 Version:	1.0.0
-Release:	16
+Release:	17
 Summary:	New canvas widget for GTK+ that uses the cairo 2D library
 Group:		Development/GNOME and GTK+
 License:	LGPL+
